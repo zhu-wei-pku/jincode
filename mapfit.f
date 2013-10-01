@@ -70,8 +70,8 @@ c     Input model:
 c     t0, u0, te
 c     rho, pien, piee, alpha (rad)
 c     dsdt, depdt, s, q
-      data aoutp/ 23.38,  0.0473,  15.68,
-     +     0.004,  0.000000000,  0.000000000,  2.8579,
+      data aoutp/ 23.38,  0.008516,  15.68,
+     +     0.004,  0.000000000,  0.000000000,  3.425261,
      +     0.000000,  0.000000,  0.853404,  7.1564e-4/
 
       real*8 qlat(nobs), qlong(nobs)
@@ -163,7 +163,7 @@ c      write(6,306) (aoutp(itemp),itemp=1,nparmout)
       offset_x=b*(-0.5d0+1d0/(1d0+q))
       offset_y = 0.d0
       call gencaustics(b, q, ep, offset_x, offset_y)
-      return
+c      return
       call getchi2(chi2,fs,fb,qmag,flux,err,bad,ndata,nobs,ndat,
      *      kmax,chi2max,iflag)
 

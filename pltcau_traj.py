@@ -15,6 +15,9 @@ mag1 = [mag1i-residual for mag1i in mag1]
 
 plt.figure()
 #plt.axis('equal')
+#plt.scatter(xcau,ycau,color='r',s=1)
+#plt.scatter(xs,ys,color='g',s=5)
+
 plt.scatter(t0,mag0, color='r', s=1)
 plt.scatter(t1,mag1, color='g', s=1)
 #plt.scatter(t0,residual,s=1)
